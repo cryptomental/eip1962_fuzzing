@@ -6,7 +6,7 @@ authors = ["Automatically generated"]
 publish = false
 
 [package.metadata]
-cargo-fuzzx = true
+cargo-fuzz = true
 
 [dependencies]
 hex = "*"
@@ -37,7 +37,4 @@ name = "fuzz_target_gas"
 path = "fuzz_targets/fuzz_target_gas.rs"
 
 [profile.dev]
-opt-level = 2
-debug = true  
 panic = 'unwind'
-overflow-checks = true
